@@ -1,0 +1,307 @@
+@charset "utf-8";
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: arial;
+	text-align: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.H5FullscreenPage-wrap {
+	background: #000;
+}
+
+.item1 {
+	background-color: #00BCD4;
+}
+
+.item2 {
+	background-color: #9863f7;
+}
+
+.item3 {
+	background-color: #fbd152;
+}
+
+.item4 {
+	background-color: #ff8738;
+}
+
+.item5 {
+	background-color: #ae8067;
+}
+
+.item6 {
+	background-color: #000000;
+}
+
+.H5FullscreenPage .arrow {
+	border-color: #fff;
+	border-width: 3px;
+}
+
+.item h2 {
+	margin: 0px auto 10px;
+	font-size: 2.5rem;
+	font-weight: normal;
+	color: #fff;
+}
+
+.verticle-middle {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+}
+
+.item1 h2 {
+	font-size: 3rem;
+	font-family: "microsoft yahei", serif;
+	color: #fff;
+}
+
+.item1 .name {
+	font-family: "microsoft yahei", serif;
+	font-size: 2rem;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.item1 .tags {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.tags span {
+	display: inline-block;
+	line-height: 40px;
+	height: 40px;
+	width: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	padding: 5px;
+	background: #fff;
+	font-family: "microsoft yahei";
+	color: #4CAF50;
+}
+
+.item2 .detail {
+    position: absolute;
+    top: 55%;
+    bottom: 45%;
+    width: 80%;
+    height: 120px;
+}
+
+.detail .detail-row {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+.detail em {
+	width: 35%;
+	display: block;
+	float: left;
+	text-align: right;
+	font-style: normal;
+	color: #673AB7;
+}
+
+.detail span {
+	display: block;
+	float: left;
+	width: 65%;
+	text-align: left;
+	color: #fff;
+}
+
+.item3 ul {
+	position: absolute;
+	width: 100%;
+	height: 180px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top:65%;
+	bottom:35%;
+}
+
+.item3 ul:before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 125px;
+	background: #fff;
+	top: 30px;
+}
+
+.item3 ul li {
+	color: #fff;
+	text-align: left;
+	width: 45%;
+	position: relative;
+	font-size: 0.875rem;
+}
+
+.item3 ul li.right {
+	left: 55%;
+}
+
+.item3 ul li:before {
+	content: "";
+	background: #FBD152;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	margin: auto;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.item3 ul li.left:before {
+	right: -16%;
+}
+
+.item3 ul li.right:before {
+	left: -15%;
+}
+
+.item3 ul li span {
+	display: block;
+}
+
+.item4 .skill {
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+}
+
+.item4 .skill span {
+		display: block;
+		height:30px;
+    line-height: 30px;
+    text-align: center;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: #9E9E9E;
+    margin: 10px;
+    color: #fff;
+    position: relative;
+    overflow:hidden;
+}
+.item4 .skill span em{
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	z-index: 1;
+}
+.item4 .skill span i{
+	position:absolute;
+	left:0;
+	height:100%;
+	z-index:1;
+	-webkit-border-radius: 30px 0 0 30px;
+	border-radius: 30px 0 0 30px;
+	-webkit-transition: width 1s ease-in;
+	transition: width 1s ease-in;
+}
+.item4 .skill span:nth-child(1) i{
+	width:68%;
+	background:#FFC107;
+}
+.item4 .skill span:nth-child(2) i{
+	width:85%;
+	background:#cddc39;
+}
+.item4 .skill span:nth-child(3) i{
+	width:75%;
+	background:#673AB7;
+}
+.item4 .skill span:nth-child(4) i{
+	width:80%;
+	background:#4CAF50;
+}
+.item4 .skill span:nth-child(5) i{
+	width:70%;
+	background:#00BCD4;
+}
+.item4 .skill span:nth-child(6) i{
+	width:60%;
+	background:#F44336;
+}
+
+.item5 ul li {
+	width: 30%;
+	display: inline-block;
+}
+
+.item5 ul li a {
+	display: block;
+}
+
+.item5 ul li img {
+	display: block;
+	width: 100%;
+	border: 0;
+}
+
+.item6 p {
+	color: #fff;
+	line-height: 1.5;
+	width: 90%;
+	margin: 30px auto;
+}
+.item6 p.f1p5{
+	font-size:1.5em;
+}
+.item6 p.line{
+	margin-top:30px;
+	padding-top:5px;
+	border-top:1px solid #fff;
+}
+.item6 div span{
+	display:block;
+	color:#fff;
+	text-align:left;
+	line-height:1.5;
+	text-indent:2rem;
+}
+
+.item6 .thanks{
+	display:none;
+}
+@media (min-width: 361px){
+	.item6 .thanks{
+		display:block;
+		margin:10px auto;
+	}
+	.item6 p{
+		margin:15px auto;
+	}
+}

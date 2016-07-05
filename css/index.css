@@ -1,0 +1,303 @@
+@charset "utf-8";
+html,body{
+    overflow:hidden;
+    height:100%;
+}
+body {margin: 0;font:14px/1.42858 "microsoft yahei",Helvetica,serif;background:#f2f2f2}
+p{margin:0}
+ul{margin:0;padding:0;list-style-type:none;}
+a{text-decoration: none;}
+
+/*header*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 1;
+    background:rgba(153,153,153,.3);
+}
+header .logo{
+    margin:0 50px;
+    float:left;
+    text-align:center;
+}
+header .logo .logo_img,header .logo .logo_p{
+    float:left;
+}
+header .logo .logo_img img{
+    width:60px;
+    height:60px;
+    vertical-align: top;
+    margin-top:2px;
+    margin-bottom:1px;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    border:1px solid #E0E0E0;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+}
+header .logo .logo_img img:hover{
+    -webkit-box-shadow: 0px 0px 15px #00BCD4;
+    box-shadow: 0px 0px 15px #00BCD4;
+}
+header .logo p{
+    margin: 0px 15px 5px;
+    padding:0 5px;
+}
+header .logo p:first-child{
+    padding: 5px 15px;
+    border-bottom:1px solid #000;
+}
+header nav{
+    float:right;
+    margin:25px 30px 0 0;
+}
+header ul li{
+    float:left;
+    margin:0 10px;
+}
+header ul li a{
+    padding:21px 0;
+    position:relative;
+    color:#666;
+}
+header ul li a:before{
+    content:"";
+    position:absolute;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    height:2px;
+    background:#34e63a;
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
+}
+header ul li a:hover:before{
+    left:0;
+    right:0;
+    opacity:1;
+}
+
+/*pagination*/
+#fp-nav ul li{
+    margin:15px;
+}
+#fp-nav ul li a{
+    color: #666;
+    background:#fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow:hidden;
+    -webkit-box-shadow: 0 0 5px #34E63A;
+    box-shadow: 0 0 5px #000;
+    behavior: url(/whsHome/lib/PIE/PIE.htc);
+}
+#fp-nav ul li a span{
+    width: 0;
+    height: 0;
+    border: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    -webkit-transition: .5s ease-in;
+    transition: .5s ease-in;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    behavior: url(/whsHome/lib/PIE/PIE.htc);
+}
+#fp-nav ul li a:hover,#fp-nav ul li a.active{
+    -webkit-box-shadow: 0 0 15px #34E63A;
+    box-shadow: 0 0 15px #34E63A;
+    -webkit-transition: .2s ease-in .5s;
+    transition: .2s ease-in .5s;
+}
+#fp-nav ul li a:hover span,#fp-nav ul li a.active span{
+    width:100%;
+    height:100%;
+    background:#34E63A;
+}
+#fp-nav ul li a span:before{
+    content:"";
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    background:#fff;
+    behavior: url(/whsHome/lib/PIE/PIE.htc);
+}
+#fp-nav ul li .fp-tooltip.right{
+    position:absolute;
+    text-align:right;
+    right:20px;
+    width:60px;
+    color:#34E63A;
+    padding-right:5px;
+    font-weight:normal;
+    -webkit-transition: .8s ease-in;
+    transition: .5s ease-in;
+}
+
+/*contact*/
+#contact {
+   position:absolute;
+    bottom:20px;
+    right:20px;
+    margin:auto;
+    background:#fff;
+    padding:10px;
+    -webkit-border-radius:5px 0px 5px 5px;
+    border-radius:5px 0px 5px 5px;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    z-index:100;
+    opacity:.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
+}
+#contact.close{
+    width:0;
+    height:0;
+    line-height:0;
+    border-width:20px;
+    border-color:transparent #00BCD4 #00BCD4 transparent;
+    border-style:solid;
+    bottom:0;
+    right:0;
+    cursor:pointer;
+}
+#contact.close *{
+    display:none;
+}
+#contact:hover{
+    opacity:1;
+    filter: alpha(opacity=100)
+}
+#contact a{
+    display:block;
+    text-align:center;
+    color:#999;
+}
+#contact a em{
+    display:block;
+    font-style:normal;
+}
+#contact a img{
+    display:inline-block;
+    border:0;
+}
+#contact .btn{
+    position:absolute;
+    top:-20px;
+    right:0;
+    z-index:0;
+    padding:0 5px;
+    background:#fff;
+    color:#f00;
+    -webkit-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+    cursor:pointer;
+    display:none;
+}
+#contact:hover .btn{
+    display:block;
+}
+#contact.close:hover .btn{
+    display:none;
+}
+
+/*article*/
+article{
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
+}
+#article section{
+    background: url(../img/bg.jpg) no-repeat top left;
+    background-size:100% 100%;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/whsHome/img/bg.jpg',sizingMethod='scale');
+    position:relative;
+    -webkit-animation: bgZoom 2s ease-in-out;
+    animation: bgZoom 2s ease-in-out;
+}
+@-webkit-keyframes bgZoom{
+	0%{background-size:150% 150%}
+	100%{background-size:100% 100%}
+}
+@keyframes bgZoom{
+	0%{background-size:150% 150%}
+	100%{background-size:100% 100%}
+}
+
+/*home*/
+.home{
+    position:absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left:0;
+    right:0;
+    margin:auto;
+    width:1000px;
+}
+@-webkit-keyframes bounce{
+	0%{margin-top:200px;}
+	100%{margin-top:0px;}
+}
+.home .home_head{
+    width:200px;
+    margin:0 auto 30px;
+    -webkit-animation: bounce 2s ease-in;
+    animation: bounce 2s ease-in;
+}
+.home .home_head img{
+    display:block;
+    width:150px;
+    height:150px;
+    margin:0 auto;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    behavior: url(/whsHome/lib/PIE/PIE.htc);
+}
+
+@-webkit-keyframes shadow{
+	0%{-webkit-box-shadow:0 0 10px #00BCD4}
+	40%{-webkit-box-shadow:0 0 20px #00BCD4}
+	60%{-webkit-box-shadow:0 0 30px #00BCD4}
+	80%{-webkit-box-shadow:0 0 20px #00BCD4}
+	100%{-webkit-box-shadow:0 0 10px #00BCD4}
+}
+@keyframes shadow{
+	0%{box-shadow:0 0 10px #00BCD4}
+	40%{box-shadow:0 0 20px #00BCD4}
+	60%{box-shadow:0 0 30px #00BCD4}
+	80%{box-shadow:0 0 20px #00BCD4}
+	100%{box-shadow:0 0 10px #00BCD4}
+}
+.home .home_head img:hover{
+    -webkit-animation:shadow 2s linear infinite;
+    animation:shadow 2s linear infinite;
+}
+.home_info_box{
+    margin:15px auto;
+    border-top:2px solid #ccc;
+    width:0;
+}
+.home_info1, .home_info2, .home_info3, .home_info4, .home_info5 {
+    margin: 15px auto;
+    display: none;
+    width: 800px;
+    text-align: center;
+}
+.home_info1{
+    font-weight:700;
+}
